@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>snake game</title>
+    <script type="text/javascript" src="jsfunctionscript.js"></script>  <!--contiene tutte le funzioni-->
+    <script type="text/javascript">
+      var vol=true;
+      var cre=true;
+      function volon(){
+        if(vol){
+          document.getElementById("vol-on").className ="fas fa-volume-off";
+          vol=false;
+        }else{
+          document.getElementById("vol-on").className ="fas fa-volume-up";
+          vol=true;
+        }
+      }
+      function showrediti(){
+        if(cre){
+          document.getElementById("inf").style.visibility="visible";
+          document.getElementById("starter").style.visibility="hidden";
+          cre=false;
+        }else{
+          document.getElementById("inf").style.visibility="hidden";
+          document.getElementById("starter").style.visibility="visible";
+          cre=true;
+        }
+      }
+
+    </script>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+<body>
+
+  <div id="starter" >
+    <div class="menu">
+      <p id="s">S</p>
+      <p id="n">nake</p>
+
+      <input type="button" id="ply" value="PLAY" onclick="play();">
+      <input type="button" id="crediti" value="CREDITS" onclick="showrediti();">
+    </div>
+    <div class="image">
+      <img src="s2.png">
+    </div>
+  </div>
+  <div id="container">
+
+    <p id="score"  ></p>
+    <p id="hscore"  ></p>
+    <i class="fas fa-pause"  id="stop" onclick="pausa=false"></i>
+    <canvas id="canvas1" width="500" height="500" ></canvas>
+  </div>
+  <div id="pa">
+    <i class="fas fa-volume-up" id="vol-on" onclick="volon();"></i>
+    <!--<i class="fas fa-volume-off" id="vol-off"></i>-->
+    <i class="fas fa-sign-out-alt" id="exit2" onclick="location.reload();"></i>
+    <input type="button" id="reload" value="RESUME" onclick="reload=true">
+  </div>
+  <div id="gameover">
+    <h1>GAME OVER</h1>
+    <h2 id="Fscore"></h2>
+    <h2 id="Hscore"></h2>
+    <i class="fas fa-redo" id="reset" onclick="play();"></i>
+    <i class="fas fa-sign-out-alt" id="exit"onclick="location.reload();"></i>
+  </div>
+  <div id="inf">
+    <i class="fas fa-times"onclick="showrediti();"></i>
+    <p>AUTORE DEL GIOCO:<br>Domenico Pio Ferrara <br>MUSICA: <br>ICONE:<br>fontawesome</p>
+  </div>
+  <div id="ist"  >
+    <p>usa
+      <img src="frecce2.png" alt=""> per muoverti e mangiare
+      <img id="apple"src="apple.png" alt=""> per crescere e battere il record<br>
+      <br>BUON APPETITO!!
+    </p>
+
+  </div>
+</body>
+</html>
