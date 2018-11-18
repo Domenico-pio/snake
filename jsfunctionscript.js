@@ -109,6 +109,9 @@ function start() {
         y = 1 ;
       }
       break;
+    case 80:          //pausa :p
+      pausa=false;
+      break;
     default:
     {
       document.getElementById("ist").style.visibility="hidden";

@@ -51,25 +51,29 @@
 
     <p id="score"  ></p>
     <p id="hscore"  ></p>
-    <i class="fas fa-pause"  id="stop" onclick="pausa=false"></i>
+    <button type="button" name="button" id="stop" onclick="pausa=false"><i class="fas fa-pause" ></i></button>
+
     <canvas id="canvas1" width="500" height="500" ></canvas>
   </div>
   <div id="pa">
-    <i class="fas fa-volume-up" id="vol-on" onclick="volon();"></i>
-    <!--<i class="fas fa-volume-off" id="vol-off"></i>-->
-    <i class="fas fa-sign-out-alt" id="exit2" onclick="location.reload();"></i>
+    <button type="button"  id="vol-on2"onclick="volon();"><i id="vol-on" class="fas fa-volume-up" ></i></button>
+    <button type="button" id="exit2" onclick="location.reload();"><i class="fas fa-sign-out-alt" ></i></button>
+
+
     <input type="button" id="reload" value="RESUME" onclick="reload=true">
   </div>
   <div id="gameover">
     <h1>GAME OVER</h1>
     <h2 id="Fscore"></h2>
     <h2 id="Hscore"></h2>
-    <i class="fas fa-redo" id="reset" onclick="play();"></i>
-    <i class="fas fa-sign-out-alt" id="exit"onclick="location.reload();"></i>
+    <button type="button" id="reset" onclick="play();"><i class="fas fa-redo" ></i></button>
+    <button type="button" id="exit" onclick="location.reload();"><i class="fas fa-sign-out-alt" ></i></button>
+
   </div>
   <div id="inf">
-    <i class="fas fa-times"onclick="showrediti();"></i>
-    <p>AUTORE DEL GIOCO:<br>Domenico Pio Ferrara <br>MUSICA: <br>ICONE:<br>fontawesome</p>
+    <button type="button" onclick="showrediti();"><i class="fas fa-times"></i></button>
+
+    <p>AUTORE DEL GIOCO:<br>Domenico Pio Ferrara <br>MUSICA: <br>ICONE:<br><a href="https://fontawesome.com/">fontawesome</a></p>
   </div>
   <div id="ist"  >
     <p>usa
