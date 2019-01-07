@@ -47,21 +47,25 @@
         <input type="button" id="crediti" value="CREDITS" onclick="showrediti();">
       </div>
       <div classs="st" id="picture">
-        <img id="img" src="s2.png">
+        <img class="img1" src="s2.png">
       </div>
-    <!--<div class="image">
-      <img src="s2.png">
-    </div>-->
   </div>
-<!--
+
   <div id="container">
+    <div class="text2">
+      <p id="score"  ></p>
+      <p id="hscore"  ></p>
+    </div>
+    <div class="st1">
+      <button type="button" name="button" id="stop" onclick="pausa=false"><i class="fas fa-pause" ></i></button>
+    </div>
 
-    <p id="score"  ></p>
-    <p id="hscore"  ></p>
-    <button type="button" name="button" id="stop" onclick="pausa=false"><i class="fas fa-pause" ></i></button>
+    <div class="can">
+      <canvas id="canvas1"  ></canvas>
+    </div>
 
-    <canvas id="canvas1" width="500" height="500" ></canvas>
   </div>
+  <!--
   <div id="pa">
     <button type="button"  id="vol-on2"onclick="volon();"><i id="vol-on" class="fas fa-volume-up" ></i></button>
     <button type="button" id="exit2" onclick="location.reload();"><i class="fas fa-sign-out-alt" ></i></button>

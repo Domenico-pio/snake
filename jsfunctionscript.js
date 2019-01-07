@@ -14,10 +14,10 @@ var pausa=true;
 var reload=false
 var inf=true;
 function play(){
-  document.getElementById("starter").style.visibility="hidden";
-  if(inf)document.getElementById("ist").style.visibility="visible";
-  document.getElementById("gameover").style.visibility="hidden";
-  document.getElementById("container").style.visibility="visible";
+  document.getElementById("starter").style.display="none";
+  //if(inf)document.getElementById("ist").style.visibility="visible";
+  //document.getElementById("gameover").style.visibility="hidden";
+  document.getElementById("container").style.display="inline-grid";
 
   game=true;
    x =0;
