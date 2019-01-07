@@ -4,11 +4,13 @@
 <head>
 
     <title>snake game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+
     <script type="text/javascript" src="jsfunctionscript.js"></script>  <!--contiene tutte le funzioni-->
     <script type="text/javascript">
       var vol=true;
       var cre=true;
+
       function volon(){
         if(vol){
           document.getElementById("vol-on").className ="fas fa-volume-off";
@@ -37,17 +39,21 @@
 <body>
 
   <div id="starter" >
-    <div class="menu">
-      <p id="s">S</p>
-      <p id="n">nake</p>
-
-      <input type="button" id="ply" value="PLAY" onclick="play();">
-      <input type="button" id="crediti" value="CREDITS" onclick="showrediti();">
-    </div>
-    <div class="image">
+      <div class="text">
+        <p id="s">S</p><p id="n">nake</p>
+      </div>
+      <div class="st" id="bott">
+        <input  type="button" id="ply" value="PLAY" onclick="play();">
+        <input type="button" id="crediti" value="CREDITS" onclick="showrediti();">
+      </div>
+      <div classs="st">
+        <img id="img" src="s2.png">
+      </div>
+    <!--<div class="image">
       <img src="s2.png">
-    </div>
+    </div>-->
   </div>
+<!--
   <div id="container">
 
     <p id="score"  ></p>
@@ -84,5 +90,6 @@
     </p>
 
   </div>
+-->
 </body>
 </html>
